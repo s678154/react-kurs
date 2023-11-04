@@ -23,6 +23,12 @@ For å kjøre dette prosjektet lokalt, trenger du Node.js og npm installert på 
 
 Appen er inndelt i separate widgets som kan brukes og utvides uavhengig av hverandre. Du kan legge til nye funksjoner, forbedre eksisterende komponenter, eller bruke dem som inspirasjon for dine egne prosjekter.
 
+## API-er
+- Yr.no: `https://api.met.no/weatherapi/locationforecast/2.0/documentation`
+  - Nowcast: `https://api.met.no/weatherapi/nowcast/2.0/complete?lat=${lat}&lon=${lon}`
+- Quotes: `https://github.com/lukePeavey/quotable`
+  - Random `https://api.quotable.io/random`
+  
 ## Tilpasninger
 
 - **Vær-widget**: Endre byer ved å oppdatere API-endepunktene.

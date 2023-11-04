@@ -24,9 +24,6 @@ export default function DailyQuote() {
           <Typography variant="body2" component="p">
             {quoteData?.content || "Laster inn tips..."}
           </Typography>
-          <Typography variant="body2" component="p" color="gray">
-            - {quoteData?.author}
-          </Typography>
         </Stack>
       </CardContent>
     </Card>

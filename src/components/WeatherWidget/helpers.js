@@ -1,10 +1,10 @@
 export const fetchNowcast = async ({ lat, lon }) => {
-  const url = `https://api.met.no/weatherapi/nowcast/2.0/complete?lat=${lat}&lon=${lon}`;
+  const url = `https://api.met.no/weatherapi/nowcast/2.0/complete?lat=${lat}&lon=${lon}`; // docs: https://api.met.no/weatherapi/documentation
 
   try {
     const response = await fetch(url, {
       headers: {
-        "User-Agent": "Daily/1.0 kriryk@gmail.com",
+        "User-Agent": "", // legg inn "{navn_på_det_du_lager}/1.0 {din_email}"
       },
     });
     if (!response.ok) {
@@ -18,41 +18,5 @@ export const fetchNowcast = async ({ lat, lon }) => {
 };
 
 export const locations = {
-  Oslo: {
-    lat: 59.9333,
-    lon: 10.7166,
-  },
-  Bergen: {
-    lat: 60.3894,
-    lon: 5.33,
-  },
-  Trondheim: {
-    lat: 63.4308,
-    lon: 10.4034,
-  },
-  Tromsø: {
-    lat: 69.6827,
-    lon: 18.9427,
-  },
-};
-
-// Konverter vindretning til en pil
-export const windArrow = (windDirection) => {
-  if (!windDirection) return null;
-  const arrows = {
-    0: "⬇️", // Nord
-    90: "⬅️", // Øst
-    180: "⬆️", // Sør
-    270: "➡️", // Vest
-  };
-  const direction = Math.round(windDirection / 90) * 90;
-  return arrows[direction] || "↔️"; // Bruk ↔️ som standard for interkardielle retninger
-};
-
-export const temperatureEmoji = (temperature) => {
-  if (!temperature) return null;
-  if (temperature < 0) return "🥶";
-  if (temperature < 10) return "😬";
-  if (temperature < 20) return "😎";
-  return "🥵";
+  Bergen: {},
 };
