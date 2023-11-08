@@ -36,6 +36,8 @@ Appen er inndelt i separate widgets som kan brukes og utvides uavhengig av hvera
 - **Daglig Sitat**: Implementer en funksjon for å dele sitater på sosiale medier.
 - **Kalender-widget**: Integrer med Google Calendar eller andre tjenester for å synkronisere hendelser.
 
+## Eksempel på hva man kan bygge nettsiden videre til
+  https://rykkjetech-daily.vercel.app/
 ---
 
 Lykke til, og håper du synes dette kurset både er lærerikt og underholdende!
